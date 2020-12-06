@@ -29,15 +29,15 @@ cd Reflection-Removal-with-Auxiliary-Techniques
 ```
 
 ## Testing
-Download our pretrained models from [here](https://drive.google.com/drive/folders/1fZPnxjmI_2auJVjIc6jZAhDBWvdmTZuo?usp=sharing) and put them under `models/`.  
+Download our pretrained models from [here](https://drive.google.com/drive/folders/1fZPnxjmI_2auJVjIc6jZAhDBWvdmTZuo?usp=sharing) and put them under `weights/`.  
 Run the sample data provided in this repo:
 ```
 python test.py
 ```
 Run your own data:
 ```
-python test.py --data_dir YOUR_REF_DATA_PATH
-               --target_img_path YOUR_TARGET_IMG_PATH
+python test.py --data_dir YOUR_DATA_PATH
+               --save_dir YOUR_SAVE_PATH
 ```
 
 ## Training
@@ -49,5 +49,5 @@ python train.py
 ```
 Train the model with your own dataset:
 ```
-python train.py --data_dir YOUR_REF_DATASET
+python train.py --data_dir YOUR_DATA_PATH
 ```
