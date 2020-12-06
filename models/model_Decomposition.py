@@ -1,3 +1,13 @@
+'''
+@inproceedings{eccv18refrmv,
+  title={Seeing deeply and bidirectionally: a deep learning approach for single image reflection removal},
+  author={Yang, Jie and Gong, Dong and Liu, Lingqiao and Shi, Qinfeng},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={654--669},
+  year={2018}
+}
+'''
+
 import torch
 import torch.nn as nn
 import functools
