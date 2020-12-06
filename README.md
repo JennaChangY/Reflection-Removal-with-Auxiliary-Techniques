@@ -2,7 +2,7 @@
 PyTorch implementaton of the following paper. In this paper, we propose a novel model with auxiliary techniques to tackle the problem of single image reflection removal. 
 <div align=center><img height="300" src="https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques/blob/main/teaser.png"/></div>
 Given a reflection contaminated input image (the first column), our method aims to decompose the reflection layer (the last column) and generate the reflection-free transmission
-layer (the third column), which must be quite similar to its corresponding groundtruth (the second column)
+layer (the third column), which must be quite similar to its corresponding groundtruth (the second column).  
 
 ## Paper
 [Single Image Reflection Removal with Edge Guidance, Reflection Classifier, and Recurrent Decomposition](https://people.cs.nctu.edu.tw/~walon/publications/chang2021wacv.pdf)  
