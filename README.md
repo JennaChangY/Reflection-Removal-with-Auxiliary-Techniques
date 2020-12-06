@@ -1,7 +1,7 @@
 # Single Image Reflection Removal with Edge Guidance, Reflection Classifier, and Recurrent Decomposition (WACV 2021 accepted)
 PyTorch implementaton of the following paper. In this paper, we propose a self-supervised end-to-end model to generate the timelapse
 video from a single image and a reference video.  
-<div align=><img height="200" src="https://github.com/angelwmab/Time-Flies/blob/master/figure/teaser.gif"/></div>
+![img](https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques/blob/main/figure/teaser.png)
 
 ## Paper
 [Single Image Reflection Removal with Edge Guidance, Reflection Classifier, and Recurrent Decomposition](https://people.cs.nctu.edu.tw/~walon/publications/chang2021wacv.pdf)  
@@ -17,9 +17,6 @@ Please cite our paper if you find it useful for your research.
  year = {2021}
 }
 ```
-
-## Example Results
-![img](https://github.com/angelwmab/Time-Flies/blob/master/figure/qualitative.png)
 
 ## Installation
 * This code was developed with Python 3.1.7 & Pytorch 1.0.1 & CUDA 9.0.
