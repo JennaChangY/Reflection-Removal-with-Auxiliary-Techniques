@@ -1,7 +1,6 @@
 # Single Image Reflection Removal with Edge Guidance, Reflection Classifier, and Recurrent Decomposition (WACV 2021 accepted)
 PyTorch implementaton of the following paper. In this paper, we propose a novel model with auxiliary techniques to tackle the problem of single image reflection removal. 
-<div align=><img height="200" src="https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques/blob/main/teaser.png"/></div>
->![img](https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques/blob/main/teaser.png)
+<div align=center><img height="300" src="https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques/blob/main/teaser.png"/></div>
 
 ## Paper
 [Single Image Reflection Removal with Edge Guidance, Reflection Classifier, and Recurrent Decomposition](https://people.cs.nctu.edu.tw/~walon/publications/chang2021wacv.pdf)  
