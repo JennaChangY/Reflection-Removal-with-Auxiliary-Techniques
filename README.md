@@ -36,7 +36,7 @@ python test.py
 ```
 Run your own data:
 ```
-python test.py --data_dir YOUR_REF_VID_FRAME_PATH
+python test.py --data_dir YOUR_REF_DATA_PATH
                --target_img_path YOUR_TARGET_IMG_PATH
 ```
 
@@ -49,5 +49,5 @@ python train.py
 ```
 Train the model with your own dataset:
 ```
-python train.py --data_dir YOUR_REF_VID_DATASET
+python train.py --data_dir YOUR_REF_DATASET
 ```
