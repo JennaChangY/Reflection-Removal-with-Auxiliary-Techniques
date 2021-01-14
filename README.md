@@ -39,15 +39,3 @@ Run your own data:
 python test.py --data_dir YOUR_DATA_PATH
                --save_dir YOUR_SAVE_PATH
 ```
-
-## Training
-Download the webcamclipart dataset [here](http://graphics.cs.cmu.edu/projects/webcamdataset/) and put them under `webcamclipart/`.  
-Download the segmentation maps of each scene [here](https://drive.google.com/drive/folders/1_RGhDdLSpdrb_bk0x-EkXz9Jmhm3AQHY?usp=sharing) and put them under `segmentations/`.  
-Then you can directly run the training code:
-```
-python train.py
-```
-Train the model with your own dataset:
-```
-python train.py --data_dir YOUR_DATA_PATH
-```
