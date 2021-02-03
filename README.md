@@ -42,9 +42,9 @@ python test.py --data_dir YOUR_DATA_PATH
 
 ## Training
 Create the synthetic training data 　
-    images from 2012 PASCAL VOC training images with the generation method from [CEILNet](https://github.com/fqnchina/CEILNet/).
-    images on Flickr with the generation method from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal).
-Download the real-world training data obtained from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal) and apply typical data augmentation techniques (flipping and random cropping). 
+* images from 2012 PASCAL VOC training images with the generation method from [CEILNet](https://github.com/fqnchina/CEILNet/).
+* images on Flickr with the generation method from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal).  
+Download the real-world training data obtained from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal) and apply typical data augmentation techniques (flipping and random cropping).  
 Or you could download whole training dataset [here](https://drive.google.com/drive/folders/1ogX2XORPgLhjj3BThGo4pKCCcG0A-fCf?usp=sharing) and put them under `train_data/`.  
 Then you can directly run the training code:
 ```
