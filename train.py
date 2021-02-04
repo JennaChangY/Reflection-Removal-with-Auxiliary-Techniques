@@ -318,7 +318,7 @@ if __name__ == '__main__':
         parser.add_argument('--load_hist',type=bool,help='use pretrained model',default=False)
         parser.add_argument('--test_flag',type=bool,help='Testing while training', default=False)
 
-        parser.add_argument('--weight_dir',type=str,help='directory of saving models',default=WEIGHT_DIR)
+        parser.add_argument('--weight_dir',type=str,help='directory of models',default=WEIGHT_DIR)
         parser.add_argument('--save_weight_dir',type=str,help='directory of saving models',default=SAVE_WEIGHT_DIR)
         parser.add_argument('--syn_data_dir_ceilnet',type=str,help='directory of synthetic training data',default=SYN_DATA_DIR_CEILNET)
         parser.add_argument('--syn_data_dir_zhang',type=str,help='directory of synthetic training data',default=SYN_DATA_DIR_ZHANG)
