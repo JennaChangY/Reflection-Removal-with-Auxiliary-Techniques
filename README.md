@@ -21,7 +21,7 @@ Please cite our paper if you find it useful for your research.
 
 ## Installation
 * This code was developed with Python 3.1.7 & Pytorch 1.0.1 & CUDA 9.0.
-* Other requirements: numpy, cv2
+* Other requirements: numpy
 * Clone this repo
 ```
 git clone https://github.com/JennaChangY/Reflection-Removal-with-Auxiliary-Techniques.git
