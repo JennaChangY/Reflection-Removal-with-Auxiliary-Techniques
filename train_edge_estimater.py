@@ -11,7 +11,7 @@ import os
 import argparse
 from models.model_Edge import Edge_UNet
 from tensorboardX import SummaryWriter
-from datasets.load_train_data import Zhang_n_CEILNet, Zhang_data, Zhang_test_data, CEILNet_data
+from datasets.load_train_data import Zhang_n_CEILNet, Zhang_test_data
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1"
 
 def computeGradient(image):
@@ -138,16 +138,11 @@ def test_edge(Edge, epoch, test_loader, writer):
 if __name__ == '__main__':
     
     WEIGHT_DIR = './weights/'
-#     SYN_DATA_DIR_CEILNET = './train_data/CEILNet/train/'
-#     SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
-#     REAL_DATA_DIR = './train_data/PerceptualLoss/real/'
-#     TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test'
+    SYN_DATA_DIR_CEILNET = './train_data/CEILNet/train/'
+    SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
+    REAL_DATA_DIR = './train_data/PerceptualLoss/real/'
+    TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test'
     SAVE_WEIGHT_DIR = './train_models/'
-    
-    SYN_DATA_DIR_CEILNET = '../../../eva_data_5/jenna/CEILNet/train/'
-    SYN_DATA_DIR_ZHANG = '../../../eva_data_5/jenna/PercetuaLoss/' 
-    REAL_DATA_DIR = '../../../eva_data_5/jenna/PercetuaLoss/real/' # combine synthetic dataset and real-world dataset while training
-    TEST_DATA_DIR_ZHANG = '../../../eva_data_5/jenna/PercetuaLoss/real_test'
     
     def get_args():
         parser = argparse.ArgumentParser()
