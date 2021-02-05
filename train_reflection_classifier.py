@@ -83,9 +83,9 @@ def test(model, test_loader, loss_func, writer):
 if __name__ == '__main__':
 
     WEIGHT_DIR = './weights/'
-	SYN_DATA_DIR_CEILNET = './train_data/CEILNet/train/'
-	SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
-	TEST_DATA_DIR_SIR2 = './train_data/SIR2/'
+    SYN_DATA_DIR_CEILNET = './train_data/CEILNet/train/'
+    SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
+    TEST_DATA_DIR_SIR2 = './train_data/SIR2/'
     SAVE_WEIGHT_DIR = './train_models/'
     
     def get_args():
@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
     transformations = transforms.Compose([transforms.Resize((args.size, args.size)), ToTensor()])
 
-	# Load data
+    # Load data
     Zhang_root = args.syn_data_dir_zhang
     CEILNet_root = args.syn_data_dir_ceilnet
     Zhang_n_CEILNet_train = Zhang_n_CEILNet(CEILNet_root=CEILNet_root, Zhang_root=Zhang_root, transforms=transformations, Zhang_num_samples=2012, CEILNet_num_samples=4000, Zhang_real=False)
