@@ -303,7 +303,7 @@ if __name__ == '__main__':
     SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
     REAL_DATA_DIR = './train_data/PerceptualLoss/real/'
     TEST_DATA_DIR_CEILNET = './train_data/CEILNet/test/'
-    TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test'
+    TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test/'
     SAVE_WEIGHT_DIR = './train_models/'
     
     def get_args():
