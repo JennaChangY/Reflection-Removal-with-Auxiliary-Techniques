@@ -141,14 +141,14 @@ if __name__ == '__main__':
     SYN_DATA_DIR_CEILNET = './train_data/CEILNet/train/'
     SYN_DATA_DIR_ZHANG = './train_data/PerceptualLoss/' # combine two synthetic dataset while training
     REAL_DATA_DIR = './train_data/PerceptualLoss/real/'
-    TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test'
+    TEST_DATA_DIR_ZHANG = './train_data/PerceptualLoss/real_test/'
     SAVE_WEIGHT_DIR = './train_models/'
     
     def get_args():
         parser = argparse.ArgumentParser()
 
-        parser.add_argument('--train_batch_size',type=int,help='batch size of training data',default=20)
-        parser.add_argument('--test_batch_size',type=int,help='batch size of testing data',default=20)
+        parser.add_argument('--train_batch_size',type=int,help='batch size of training data',default=16)
+        parser.add_argument('--test_batch_size',type=int,help='batch size of testing data',default=16)
         parser.add_argument('--epochs',type=int,help='numbers of epoches',default=200)
         parser.add_argument('--lr',type=float,help='learning rate',default=1e-3)
         parser.add_argument('--load_hist',type=bool,help='use pretrained model',default=False)
