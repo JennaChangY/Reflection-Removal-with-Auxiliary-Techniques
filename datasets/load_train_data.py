@@ -257,3 +257,46 @@ class CEILNet_data(Dataset):
     def __len__(self):
         return self.size
     
+class SIR2(Dataset):
+    
+    def __init__(self, root = '', transforms = None):
+        
+        self.I_list = []
+        self.R_list = []
+        self.B_list = []
+        self.transforms = transforms
+    
+        file_list = []
+        file_list.extend(sorted(glob(join(root, '*/*/[m].jpg'))))
+        file_list.extend(sorted(glob(join(root, '*/*/*/*/[m].jpg'))))
+        file_list.extend(sorted(glob(join(root, '*/*/*/*/*[m]*.png'))))
+
+        for I_name in file_list:
+            R_name = I_name.replace('m', 'r')
+            B_name = I_name.replace('m', 'g')
+            if not isfile(I_name) or not isfile(R_name) or not isfile(B_name):
+                continue
+            self.I_list += [I_name]
+            self.R_list += [R_name]
+            self.B_list += [B_name]
+            
+        self.size = len(self.I_list)
+
+    def __getitem__(self, index):
+        
+        index = index % self.size
+        
+        I = Image.open(self.I_list[index])
+        R = Image.open(self.R_list[index])
+        B = Image.open(self.B_list[index])
+        
+        if self.transforms is not None:
+            I = self.transforms(I)
+            R = self.transforms(R)
+            B = self.transforms(B)
+            
+        return I, R, B
+    
+    def __len__(self):
+        return self.size
+    
