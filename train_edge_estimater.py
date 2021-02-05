@@ -187,17 +187,17 @@ if __name__ == '__main__':
     Zhang_train_root = args.real_data_dir
     Zhang_root = args.syn_data_dir_zhang
     CEILNet_root = args.syn_data_dir_ceilnet
-    Zhang_n_CEILNet_train = Zhang_n_CEILNet(CEILNet_root = CEILNet_root, Zhang_root = Zhang_root, transforms = transformations, Zhang_num_samples = 1000, CEILNet_num_samples=1000, Zhang_real=True)
+    Zhang_n_CEILNet_train = Zhang_n_CEILNet(CEILNet_root=CEILNet_root, Zhang_root=Zhang_root, transforms=transformations, Zhang_num_samples=1000, CEILNet_num_samples=1000, Zhang_real=True)
     train_loader = DataLoader(Zhang_n_CEILNet_train, batch_size=args.train_batch_size, shuffle=True)
     if args.test_flag:
         Zhang_test_root = args.test_data_dir_zhang
-        Zhang_test = Zhang_test_data(root = Zhang_test_root, transforms = transformations)
+        Zhang_test = Zhang_test_data(root=Zhang_test_root, transforms=transformations)
         Zhang_test_loader = DataLoader(Zhang_test, batch_size=args.test_batch_size, shuffle=True)
 
     # Train & test the model
     for epoch in range(1, 1 + args.epochs):
         print("Start training[%d]" %epoch)
-        Zhang_n_CEILNet_train = Zhang_n_CEILNet(CEILNet_root = CEILNet_root, Zhang_root = Zhang_root, transforms = transformations, Zhang_num_samples = 1000, CEILNet_num_samples=1000, Zhang_real=True)
+        Zhang_n_CEILNet_train = Zhang_n_CEILNet(CEILNet_root=CEILNet_root, Zhang_root=Zhang_root, transforms=transformations, Zhang_num_samples=1000, CEILNet_num_samples=1000, Zhang_real=True)
         train_loader = DataLoader(Zhang_n_CEILNet_train, batch_size=args.train_batch_size, shuffle=True)
         train_edge(Edge, opt_edge, epoch, train_loader, writer)
         if args.test_flag:
