@@ -46,8 +46,8 @@ Create the synthetic training data,
  - images on Flickr with the generation method from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal)    
   
 Download the real-world training data obtained from [Zhang et al.](https://github.com/ceciliavision/perceptual-reflection-removal) and apply typical data augmentation techniques (flipping and random cropping).  
-Or you could download whole training dataset [here](https://drive.google.com/drive/folders/1ogX2XORPgLhjj3BThGo4pKCCcG0A-fCf?usp=sharing) and put them under `train_data/`.  
-Then you can directly run the training code:
+Or you can download whole training dataset [here](https://drive.google.com/drive/folders/1ogX2XORPgLhjj3BThGo4pKCCcG0A-fCf?usp=sharing) and put them under `train_data/`.  
+Then directly run the training code:
 ```
 python train.py
 ```
