@@ -1,6 +1,11 @@
 import torch
 import torch.nn as nn
+import torch.utils.model_zoo as model_zoo
 from torch.utils.model_zoo import load_url as load_state_dict_from_url
+
+model_urls = {
+    'vgg19': 'https://download.pytorch.org/models/vgg19-dcbb9e9d.pth',
+}
 
 class VGG(nn.Module):
 

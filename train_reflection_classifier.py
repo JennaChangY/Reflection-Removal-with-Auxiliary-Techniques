@@ -10,7 +10,7 @@ from torchvision.transforms import Compose, ToTensor, Resize
 from torch.utils.data import Dataset, DataLoader
 import os
 import argparse
-from models.model_classifier_VGG19 import VGG19_6channel
+from models.ReflectionClassifier_VGG19 import VGG19_6channel
 from tensorboardX import SummaryWriter
 from datasets.load_train_data import Zhang_n_CEILNet, SIR2
 os.environ["CUDA_VISIBLE_DEVICES"]="3,4"
