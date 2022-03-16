@@ -11,7 +11,7 @@ import os
 import argparse
 from models.model_Decomposition import Generator_cascade_withEdge
 from models.model_Edge import Edge_UNet
-from models.model_classifier_VGG19 import VGG19_6channel
+from models.ReflectionClassifier_VGG19 import VGG19_6channel
 from models.VGG import similarity_VGG_bn
 from tensorboardX import SummaryWriter
 from datasets.load_train_data import Zhang_n_CEILNet, Zhang_data, Zhang_test_data, CEILNet_data
